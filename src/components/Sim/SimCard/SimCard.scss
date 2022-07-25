@@ -1,0 +1,152 @@
+.simCard-item {
+    width: calc(74% / 3.3);
+    padding: 100px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.09), -2px -2px 10px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+}
+
+.simCard-image {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -40px;
+}
+
+.simCard-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #585858;
+    margin-bottom: 12px;
+}
+
+.simCard-item:hover {
+    box-shadow: 1px 1px 12px #caecff, -2px -2px 10px #caecff;
+}
+.simCard-item:hover > .simCard-title {
+    color: #0065ff;
+}
+
+.simCard-btn {
+    width: 100px;
+    font-weight: 700;
+    background-color: white;
+    padding: 9px 11px;
+    color: #0065ff;
+    border: 1px solid #0065ff;
+    border-radius: 8px;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+.simCard-btn:hover {
+    color: white;
+    background-color: #0065ff;
+}
+
+@media only screen and (max-width: 740px) {
+    .sim-wrapper {
+        width: 90%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        text-align: center;
+        position: relative;
+    }
+    .sim-next__button {
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.8);
+        color: #a3a3a3;
+        position: absolute;
+        top: 47%;
+    }
+
+    .simCard-item {
+        width: 90%;
+        padding: 60px 20px 20px 20px;
+        margin-top: 10%;
+        justify-self: center;
+        border-radius: 10px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.09), -2px -2px 10px rgba(0, 0, 0, 0.09);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        position: relative;
+    }
+
+    .simCard-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #585858;
+        margin-bottom: 12px;
+    }
+
+    .simCard-btn {
+        font-weight: 700;
+        background-color: white;
+        padding: 9px 11px;
+        color: #0065ff;
+        border: 1px solid #0065ff;
+        border-radius: 8px;
+        margin-top: 21px;
+    }
+    .simCard-image {
+        width: 90px;
+        height: 90px;
+        top: -35px;
+    }
+    .simCard-image img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1280px) {
+    .simCard-item {
+        width: 70%;
+        padding: 60px 20px 20px 20px;
+        margin-top: 10%;
+        justify-self: center;
+    }
+
+    .simCard-item:nth-child(1) {
+        grid-column: 1 / 2;
+    }
+    .simCard-item:nth-child(2) {
+        grid-column: 2 / 3;
+    }
+    .simCard-item:nth-child(3) {
+        grid-column: 1 / 2;
+    }
+    .simCard-item:nth-child(4) {
+        grid-column: 2 / 3;
+    }
+
+    .simCard-image {
+        width: 80px;
+        height: 80px;
+        top: -24px;
+    }
+    .simCard-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .simCard-description {
+        text-align: center;
+    }
+}

@@ -1,0 +1,164 @@
+.subCard-item {
+    width: 228px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 6px #ccc;
+    border-radius: 15px;
+    position: relative;
+}
+.subCard-title {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0 20px 0;
+    color: white;
+    background: linear-gradient(180deg, #0065ff 0%, #166aeb 75.52%, #1062de 100%);
+    border-radius: 6px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    position: relative;
+}
+
+// Hot Circle
+
+.hot {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #da052e;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hot > span {
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    bottom: -45px;
+    right: -32px;
+    position: absolute;
+    background: linear-gradient(317.26deg, #bcbec0 35.96%, #f1f2f2 66.98%);
+    transform: rotate(20deg);
+}
+
+// Subcription Card list
+
+.subCard-list {
+    height: 100px;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.subCard-list__item {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    text-align: center;
+    padding: 0 0 5px 0;
+    border-bottom: 1px dotted #1e1e1e;
+}
+
+// Button
+.subCard-more {
+    padding: 10px 0 0 0;
+}
+
+// Responsive
+
+@media only screen and (max-width: 740px) {
+    .subCard-item {
+        width: 250px;
+        height: 326px;
+        font-size: 18px;
+        border-radius: 15px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px 6px #ccc;
+        position: relative;
+    }
+
+    .subCard-title {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 10px 0 20px 0;
+        margin-bottom: 16px;
+        color: white;
+        background: linear-gradient(180deg, #0065ff 0%, #166aeb 75.52%, #1062de 100%) !important;
+        border-radius: 6px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        text-align: center;
+        position: relative;
+    }
+
+    .subCard-more {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .hot {
+        top: -20px;
+        right: -20px;
+    }
+    .subCard-item {
+        width: 60%;
+        margin: 15px 0;
+        justify-self: center;
+    }
+
+    .subCard-title {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .subCard-list__item {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .subCard-item {
+        width: 200px;
+        height: 255px;
+        margin: 0 30px;
+    }
+
+    .hot {
+        top: -5px;
+        right: -20px;
+    }
+
+    .subCard-title {
+        font-size: 16px;
+    }
+    .subCard-list__item {
+        font-size: 14px;
+    }
+    .subCard-more {
+        margin-top: 10px;
+    }
+    .content-data__more button {
+        width: 90px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}

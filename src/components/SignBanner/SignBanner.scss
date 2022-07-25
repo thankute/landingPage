@@ -1,0 +1,114 @@
+.sign {
+    width: 100%;
+    background-image: url(../../assets/images/image19.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 9px solid #db0020;
+    position: relative;
+}
+
+.sign::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 9px;
+    background: var(--secondary);
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+.sign-wrapper {
+    max-width: 1440px;
+    margin: 0 10%;
+    padding: 24px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.sign-title {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.sign-description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+
+.sign-content button {
+    width: 170px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #07bedf;
+    border: 1px solid #07bedf;
+    padding: 9px 20px;
+    border-radius: 10px;
+}
+
+.sign-content button:hover {
+    color: white;
+    background: linear-gradient(0deg, #07bedf 0.85%, #08c9eb 17.93%, #03c2f5 97.28%);
+}
+
+.sign-wrapper img {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 740px) {
+    .sign {
+        height: 100%;
+    }
+    .sign-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign-wrapper img {
+        display: none;
+    }
+    .sign-content {
+        text-align: center;
+    }
+    .sign-title {
+        font-size: 16px;
+    }
+    .sign-description {
+        font-size: 14px;
+    }
+    .sign-content button {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .sign-wrapper {
+        margin: 0 5%;
+    }
+    .sign-title {
+        font-size: 18px;
+    }
+    .sign-description {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .sign-wrapper {
+        margin: 0 5%;
+    }
+    .sign-title {
+        font-size: 18px;
+    }
+    .sign-description {
+        font-size: 14px;
+    }
+}

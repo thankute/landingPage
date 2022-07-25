@@ -1,0 +1,114 @@
+.data {
+    width: 1440px;
+}
+
+.data > .text-content {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.content-choice {
+    padding: 7px 20px;
+    margin: 0 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #585858;
+}
+
+.content-choice:hover {
+    border: 1px solid #0065ff;
+    border-radius: 10px;
+    color: #0065ff;
+}
+
+.data > .content-wrapper {
+    margin-top: 43px;
+    width: 74%;
+    position: relative;
+}
+
+.next-button {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    color: #a3a3a3;
+    position: absolute;
+    top: 45%;
+}
+
+.next-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.prev {
+    left: -10px;
+}
+.next {
+    right: -10px;
+}
+
+// Responsive
+
+@media only screen and (max-width: 740px) {
+    .data > .content-wrapper {
+        align-items: center;
+    }
+    .choice-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-choice {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .data > .text-content {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .content-choice {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+
+    .data > .content-wrapper {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .data > .content-wrapper {
+        width: 90%;
+        display: flex;
+        margin-top: 20px;
+    }
+    .data > .text-content {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .content-choice {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+}

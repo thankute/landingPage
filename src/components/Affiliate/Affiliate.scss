@@ -1,0 +1,30 @@
+.text-content {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1062de;
+    margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 740px) {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-content {
+        font-size: 18px;
+    }
+
+    .content-item > img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .text-content {
+        font-size: 18px;
+    }
+}

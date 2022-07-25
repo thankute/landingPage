@@ -1,0 +1,81 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+    --text-primary: -webkit-linear-gradient(180deg, #0065ff 0%, #166aeb 75.52%, #1062de 100%);
+    --nav-background: linear-gradient(180deg, #37a1ff 0%, #1278d2 100%);
+    --secondary: linear-gradient(180deg, #0065ff 0%, #166aeb 75.52%, #1062de 100%);
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.content-wrapper {
+    margin: 16px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+/* Mobile and Tablet */
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .subCard-more {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-bottom: 6px;
+    }
+}

@@ -1,0 +1,90 @@
+.btn {
+    margin: 0 1px;
+    padding: 9px 11px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+// Button types
+
+.primary {
+    color: var(--white);
+    background: var(--secondary);
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), var(--secondary);
+    }
+}
+
+.outline {
+    background: -webkit-linear-gradient(180deg, #0065ff 0%, #166aeb 75.52%, #1062de 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: #0065ff;
+
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+
+// Button sizes
+
+.small {
+    padding: 8px 21px;
+}
+
+.large {
+    width: 170px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #07bedf;
+    border: 1px solid #07bedf;
+    padding: 9px 20px;
+    border-radius: 10px;
+}
+
+.large:hover {
+    color: white;
+    background: linear-gradient(0deg, #07bedf 0.85%, #08c9eb 17.93%, #03c2f5 97.28%);
+}
+
+// Responsive
+@media only screen and (max-width: 1024px) {
+    .btn {
+        width: 60%;
+        padding: 4px 8px;
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .primary {
+        padding: 8px 21px;
+    }
+    .outline {
+        padding: 9px 5px;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .primary {
+        padding: 4px 8px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .btn {
+        width: 86px;
+        font-size: 12px;
+        margin: 0 2px;
+    }
+    .primary,
+    .outline {
+        padding: 6px 8px;
+    }
+}
