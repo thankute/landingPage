@@ -1,0 +1,105 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-background {
+    background-color: #f5f6f8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-contact {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.sign-contact:hover {
+    cursor: pointer;
+    animation: shaking 0.25s infinite;
+}
+
+.phone {
+    background: linear-gradient(
+        0deg,
+        #ff8317 0.85%,
+        #ff7f13 3.15%,
+        #ff6e00 14.81%,
+        #ff9200 51.9%,
+        #ff8404 78.69%,
+        #ff8108 97.28%
+    );
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    bottom: 100px;
+    right: 20px;
+}
+
+.message {
+    bottom: 200px;
+    right: 20px;
+    background: linear-gradient(0deg, #07bedf 0.85%, #08c9eb 17.93%, #03c2f5 97.28%);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0eg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .sign-contact {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .sign-contact {
+        width: 60px;
+        height: 60px;
+    }
+    .phone {
+        bottom: 80px;
+    }
+
+    .message {
+        bottom: 160px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .sign-contact {
+        width: 60px;
+        height: 60px;
+    }
+    .phone {
+        bottom: 80px;
+    }
+
+    .message {
+        bottom: 160px;
+    }
+}
