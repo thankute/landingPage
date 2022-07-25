@@ -10,7 +10,7 @@ function App() {
         <div className={'wrapper'}>
           <Header />
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/landingPage' element={<Home />} />
           </Routes>
         </div>
       </Router>
