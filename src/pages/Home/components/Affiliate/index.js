@@ -1,8 +1,8 @@
 import './Affiliate.scss'
 import ShowCard from './ShowCard'
-import img1 from '../../assets/images/Group 3628.png'
-import img2 from '../../assets/images/Group 3629.png'
-import img3 from '../../assets/images/Group 3630.png'
+import img1 from '../../Images/Group3628.png'
+import img2 from '../../Images/Group3629.png'
+import img3 from '../../Images/Group3630.png'
 
 
 function Affiliate() {

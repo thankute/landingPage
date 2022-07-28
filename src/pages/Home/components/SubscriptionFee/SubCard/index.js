@@ -1,6 +1,6 @@
 import classnames from "classnames/bind"
 import styles from './SubCard.scss'
-import Button from '../../Button';
+import Button from '../../../../../components/Button';
 
 const cx = classnames.bind(styles);
 

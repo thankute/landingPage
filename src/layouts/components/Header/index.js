@@ -1,9 +1,9 @@
-import classnames from "classnames/bind"
-import Navbar from "../Navbar";
-import styles from './Header.scss';
-import banner from '../../assets/images/CS60-01 1.png'
+import classNames from "classnames/bind"
+import Navbar from "./Navbar";
+import styles from './Header.module.scss';
+import banner from './Images/slider.png'
 
-const cx = classnames.bind(styles);
+const cx = classNames.bind(styles);
 
 function Header() {
     return (

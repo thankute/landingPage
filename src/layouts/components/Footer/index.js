@@ -1,7 +1,7 @@
 import classnames from 'classnames/bind';
 import styles from './Footer.scss';
-import osp from '../../assets/images/image11.png';
-import zalo from '../../assets/images/image18.png';
+import osp from './Images/image11.png';
+import zalo from './Images/image18.png';
 
 const cx = classnames.bind(styles);
 

@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import classnames from 'classnames/bind'
-import styles from './Navbar.scss'
-import { Link } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
-const cx = classnames.bind(styles)
+import { useState } from 'react';
+import classNames from 'classnames/bind';
+import styles from './Navbar.scss';
+import { Link } from 'react-router-dom';
+import logo from '../Images/logo.png';
+const cx = classNames.bind(styles)
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -64,9 +64,9 @@ function Navbar() {
                     </Link>
                 </li>
                 <span>
-                    <p>Đăng nhập</p>
+                    <Link to='/sign-in' className='sign-btn' onClick={closeMobileMenu}>Đăng nhập</Link>
                     <span></span>
-                    <p>Đăng ký</p>
+                    <Link to='/sign-up' className='sign-btn' onClick={closeMobileMenu}>Đăng ký</Link>
                 </span>
             </ul>
         </nav>

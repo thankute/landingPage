@@ -1,17 +1,14 @@
 import classnames from 'classnames/bind';
 import styles from './Sim.scss';
 import SimCard from './SimCard';
-import img1 from '../../assets/images/Group 4621.png'
-import img2 from '../../assets/images/Group 4647.png'
-import img3 from '../../assets/images/Group 4623.png'
-import img4 from '../../assets/images/Group 4653.png'
+import img1 from '../../Images/Group4621.png'
+import img2 from '../../Images/Group4647.png'
+import img3 from '../../Images/Group4623.png'
+import img4 from '../../Images/Group4653.png'
 
 const cx = classnames.bind(styles);
 
 function Sim() {
-
-
-
 
     return (
         <div id="sim" className={cx("content sim")}>

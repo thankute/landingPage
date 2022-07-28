@@ -45,8 +45,8 @@ function SubscriptionFee() {
                             </>
                         )
                 }
-                <div class="next-button hide prev"><i class="fa-solid fa-arrow-left"></i></div>
-                <div class="next-button hide next"><i class="fa-solid fa-arrow-right"></i></div>
+                <div className="next-button hide prev"><i className="fa-solid fa-arrow-left"></i></div>
+                <div className="next-button hide next"><i className="fa-solid fa-arrow-right"></i></div>
             </div>
         </div>
     )
